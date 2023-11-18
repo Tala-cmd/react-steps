@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css'
 
 const messages = [
@@ -7,7 +8,7 @@ const messages = [
 ];
 
 export default function App() {
-  const step =1; 
+  const [step, setStep] = useState(1) 
 
   function handlePrevious(){
     alert('Previous')
